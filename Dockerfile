@@ -1,4 +1,4 @@
 FROM openjdk:17.0.1
 EXPOSE 8080
-ADD target/docker-jenkins-integration-sample.jar docker-jenkins-integration-sample.jar
+ADD C:\ProgramData\Jenkins\.jenkins\workspace\docker-jenkins-integration-sample.git\target
 ENTRYPOINT ["java","-jar","/docker-jenkins-integration-sample.jar"]
