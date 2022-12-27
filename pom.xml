@@ -10,5 +10,20 @@
 <build>
     <finalName>docker-jenkins-integration-sample</finalName>
 </build>
-
+<project>
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.10.1</version>
+          <configuration>
+          <url>http://localhost:8089/manager/text</url>
+		  <server>myserver</server>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
 </project>
